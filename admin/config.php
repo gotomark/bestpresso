@@ -3,9 +3,10 @@
 define('HTTP_SERVER', 'http://bestpresso.izzi.studio/admin/');
 define('HTTP_CATALOG', 'http://bestpresso.izzi.studio/');
 
+
 // HTTPS
-define('HTTPS_SERVER', 'http://bestpresso.izzi.studio/admin/');
-define('HTTPS_CATALOG', 'http://bestpresso.izzi.studio/');
+define('HTTPS_SERVER', 'https://bestpresso.izzi.studio/admin/');
+define('HTTPS_CATALOG', 'https://bestpresso.izzi.studio/');
 
 // DIR
 define('DIR_APPLICATION', '/home/izzistudio/public_html/subdomain/bestpresso/admin/');

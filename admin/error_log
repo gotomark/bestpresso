@@ -1,0 +1,20 @@
+[02-Sep-2020 11:05:51 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "module/quickcheckouttpl.twig" (looked into: /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/admin/view/template, /home/izzistudio/public_html/subdomain/bestpresso/admin/view/template). in /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('module/quickche...')
+#1 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('module/quickche...')
+#2 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('module/quickche...', NULL)
+#3 /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate(' in /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php on line 215
+[02-Sep-2020 11:13:57 UTC] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "module/quickcheckouttpl.twig" (looked into: /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/admin/view/template, /home/izzistudio/public_html/subdomain/bestpresso/admin/view/template). in /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php:215
+Stack trace:
+#0 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php(139): Twig_Loader_Filesystem->findTemplate('module/quickche...')
+#1 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Environment.php(312): Twig_Loader_Filesystem->getCacheKey('module/quickche...')
+#2 /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Environment.php(378): Twig_Environment->getTemplateClass('module/quickche...', NULL)
+#3 /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/library/template/twig.php(42): Twig_Environment->loadTemplate(' in /home/izzistudio/public_html/subdomain/bestpresso/system/library/template/Twig/Loader/Filesystem.php on line 215
+[04-Sep-2020 06:25:29 UTC] PHP Fatal error:  Uncaught Exception: Error: Could not load model extension/d_opencart_patch/module! in /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/engine/loader.php:89
+Stack trace:
+#0 /home/izzistudio/public_html/subdomain/bestpresso/admin/controller/extension/module/d_quickcheckout.php(24): Loader->model('extension/d_ope...')
+#1 /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/engine/action.php(71): ControllerExtensionModuleDQuickcheckout->__construct(Object(Registry))
+#2 /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#3 /home/izzistudio/public_html/subdomain/bestpresso/admin/controller/extension/extension/module.php(54): Loader->controller('extension/modul...')
+#4 /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->uninstall()
+#5 /home/izzistudio/public_html/subdomain/bestpresso/admin/ in /home/izzistudio/public_html/subdomain/bestpresso/storage/modification/system/engine/loader.php on line 89

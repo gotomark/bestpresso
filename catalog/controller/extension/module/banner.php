@@ -25,7 +25,7 @@ class ControllerExtensionModuleBanner extends Controller {
 		}
 
 		$data['module'] = $module++;
-
+        $data['module_name'] = $setting['name'];
 		return $this->load->view('extension/module/banner', $data);
 	}
 }

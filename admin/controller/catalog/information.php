@@ -246,6 +246,8 @@ class ControllerCatalogInformation extends Controller {
 	}
 
 	protected function getForm() {
+
+
 		$data['text_form'] = !isset($this->request->get['information_id']) ? $this->language->get('text_add') : $this->language->get('text_edit');
 
 		if (isset($this->error['warning'])) {
@@ -364,6 +366,16 @@ class ControllerCatalogInformation extends Controller {
 			$data['bottom'] = 0;
 		}
 
+		//DIMA 04.09 view top page
+		if (isset($this->request->post['top'])) {
+			$data['top'] = $this->request->post['top'];
+		} elseif (!empty($information_info)) {
+			$data['top'] = $information_info['top'];
+		} else {
+			$data['top'] = 0;
+		}
+        //DIMA 04.09 view top page end
+
 		if (isset($this->request->post['status'])) {
 			$data['status'] = $this->request->post['status'];
 		} elseif (!empty($information_info)) {
@@ -403,6 +415,9 @@ class ControllerCatalogInformation extends Controller {
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
+
+        $data['help_top'] = $this->language->get('help_top');
+        $data['entry_top'] = $this->language->get('entry_top');
 
 		$this->response->setOutput($this->load->view('catalog/information_form', $data));
 	}

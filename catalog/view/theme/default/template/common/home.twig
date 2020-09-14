@@ -5,10 +5,18 @@
     {% set class = 'col-sm-6' %}
     {% elseif column_left or column_right %}
     {% set class = 'col-sm-9' %}
+    {% set class_bottom = 'col-sm-12' %}
     {% else %}
     {% set class = 'col-sm-12' %}
     {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
-    {{ column_right }}</div>
+    <div class="{{ class }}">
+      {{ content_top }}
+    </div>
+    </div>
+    <div class="row">
+       <div id="content" class="{{ class_bottom }}">
+        {{ content_bottom }}
+       </div>
+    </div>
 </div>
 {{ footer }}

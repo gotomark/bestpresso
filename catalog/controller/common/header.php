@@ -8,6 +8,7 @@ class ControllerCommonHeader extends Controller {
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');
 
+
 		foreach ($analytics as $analytic) {
 			if ($this->config->get('analytics_' . $analytic['code'] . '_status')) {
 				$data['analytics'][] = $this->load->controller('extension/analytics/' . $analytic['code'], $this->config->get('analytics_' . $analytic['code'] . '_status'));
@@ -76,6 +77,22 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
+
+        $data['fb_link'] = $this->config->get('config_fb');
+        $data['instagram_link'] = $this->config->get('config_instagram');
+
+        /*Links informations pages to top*/
+        $this->load->model('catalog/information');
+        $data['top_menu_list'] = array();
+        foreach ($this->model_catalog_information->getInformations() as $result) {
+            if ($result['top']) {
+                $data['top_menu_list'][] = array(
+                    'title' => $result['title'],
+                    'href'  => $this->url->link('information/information', 'information_id=' . $result['information_id'])
+                );
+            }
+        }
+        /*Links informations pages to top*/
 
 		return $this->load->view('common/header', $data);
 	}

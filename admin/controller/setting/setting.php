@@ -880,6 +880,18 @@ class ControllerSettingSetting extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
+        if (isset($this->request->post['config_fb'])) {
+            $data['config_fb'] = $this->request->post['config_fb'];
+        } else {
+            $data['config_fb'] = $this->config->get('config_fb');
+        }
+
+		if (isset($this->request->post['config_instagram'])) {
+            $data['config_instagram'] = $this->request->post['config_instagram'];
+        } else {
+            $data['config_instagram'] = $this->config->get('config_instagram');
+        }
+
 		$this->response->setOutput($this->load->view('setting/setting', $data));
 	}
 

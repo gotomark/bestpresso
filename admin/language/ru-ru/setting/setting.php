@@ -122,6 +122,8 @@ $_['entry_error_display']            = 'Показывать ошибки';
 $_['entry_error_log']                = 'Записывать ошибки';
 $_['entry_error_filename']           = 'Файл журнала ошибок';
 $_['entry_status']                   = 'Статус';
+$_['entry_fb']                       = 'Facebook';
+$_['entry_instagram']                = 'Instagramm';
 
 // Help
 $_['help_geocode']                   = 'Пожалуйста, введите ваше местонахождение как GeoCode.';

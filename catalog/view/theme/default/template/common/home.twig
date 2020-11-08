@@ -10,10 +10,93 @@
             {% set class = 'col-sm-12' %}
         {% endif %}
         <div id="content_right" class="{{ class }}">
-          {{ content_top }}
+            {{ content_top }}
         </div>
         <div id="content" class="col-lg-12">
-          {{ content_bottom }}
+            {{ content_bottom }}
+
+            <div class="row homeNews_row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="homeNews_item"
+                         style="background: url('/catalog/view/theme/default/image/home_newsBg_1.jpg');">
+                        <div class="homeNews_title">Завітайте на дегустацію кави від наших майстрів!</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="homeNews_item"
+                         style="background: url('/catalog/view/theme/default/image/home_newsBg_2.jpg');">
+                        <div class="homeNews_title">Новітня розробка в світі морозива, обладнання яке вас здивує!</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="homeNews_allnews">
+                        <h2>Новини</h2>
+                        <p>Ми пропонуємо вам тільки корисні та актуальні новини які можуть вас зацікавити та надихнути
+                            на нові звершення, так само як гарна чашка ранкової кави.</p>
+                        <a href="" class="btn btn-white">Всі новини</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row align-items-center homeSendMessage_row">
+                <div class="col-md-5 col-sm-12 col-xs-12 ">
+                    <h2>Напишіть нам і ми обов’язково відповімо вам найближчим часом</h2>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <form action="javascript:void(0)" method="post">
+                        <div class="row">
+                            <div class="col-md-6"><input type="text" name="name" placeholder="Ваше ім’я +"></div>
+                            <div class="col-md-6"><input type="email" name="email" placeholder="Ваш Email +"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"><input type="text" name="phone" placeholder="Ваш телефон"></div>
+                            <div class="col-md-6"><input type="text" name="company"
+                                                         placeholder="Назва вашої організації">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"><input type="text" name="message" placeholder="Текст повідомення">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="file-upload" class="custom-file-upload">
+                                    Загрузити файл
+                                </label>
+                                <input id="file-upload" type="file" name="file"/>
+                                <input class="btn btn-white" type="submit" value="Надіслати"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="row homeSubscribe_row">
+                <div class="col-md-4">
+                    <h2>Підписатись на наші новини </h2>
+                </div>
+                <div class="col-md-8">
+                    <form action="javascrit:void(0)" method="post">
+                        <div class="row align-items-end">
+                            <div class="col-lg-4">
+                                <label>Ваше ім’я</label>
+                                <input type="text" name="name" placeholder="Ім’я">
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Ваша email адреса</label>
+                                <input type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="submit" value="Підписатись">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
         {{ column_right }}
     </div>

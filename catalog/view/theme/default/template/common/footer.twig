@@ -1,5 +1,93 @@
 <footer>
   <div class="container">
+    <a href="/" class="footlogo">
+      <img src="/catalog/view/theme/default/image/footlogo.svg">
+    </a>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="headline">
+          Про бестпрессо
+        </div>
+        <ul>
+          <li><a href="#">Про нас</li>
+          <li><a href="{{ contact }}">{{ text_contact }}</li>
+          <li><a href="#">Вакансії</li>
+          <li><a href="#">Новини</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="headline">
+          Сторінки каталогу
+        </div>
+        <ul>
+          <li><a href="#">Обладнання</li>
+          <li><a href="#">Інгредієнти для бізнесу</li>
+          <li><a href="#">Кава, чай, шоколад</li>
+          <li><a href="#">Все для Кав'ярні (HoReCa)</li>
+          <li><a href="#">Співпраця з Бестпрессо</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="headline">
+          Інформація
+        </div>
+        <ul>
+          <li><a href="#">Способи оплати</li>
+          <li><a href="#">Умови кредитування</li>
+          <li><a href="#">Способи доставки</li>
+          <li><a href="{{ return }}">{{ text_return }}</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <div class="headline">
+          Контакти, адреса, графік
+        </div>
+        <div class="phone">
+          <a href="tel:0800339592">0 800 33 95 92</a>
+          <br />
+            <a class="callme">Замовити дзвінок</a>
+        </div>
+        <div class="email">
+          <a href="mailto:Office@bestpresso.co.ua">
+            Office@bestpresso.co.ua
+          </a>
+        </div>
+        <div class="worktime">
+          Пн-Пт с 10:00 до 18:00
+        </div>
+        <div class="address">
+          Україна, КиївКазимира Малевича, 86 П
+        </div>
+        <div class="social">
+          <div class="soc_heading">
+            Соціальні мережі
+          </div>
+          <div class="icons">
+            <a href="{{ fb_link }}" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 14 14"><use href="#fb"></svg>
+            </a>
+            <a href="{{ instagram_link }}" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 14 14"><use href="#insta"></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row  align-items-center copy">
+      <div class="col-lg-4">
+        <a class="izzi" href="https://izzi.studio">
+          Designed by: <img src="/catalog/view/theme/default/image/izzi.png">
+        </a>
+      </div>
+      <div class="col-lg-4 text-center copyright">
+        ©2020. Bestpresso. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!--<div class="container">
     <div class="row">
       {% if informations %}
       <div class="col-sm-3">
@@ -43,6 +131,7 @@
 {% for script in scripts %}
 <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}
+-->
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
